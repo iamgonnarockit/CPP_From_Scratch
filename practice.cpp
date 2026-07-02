@@ -24,4 +24,10 @@ class Book{
         cout<<"Pages="<<pages<<endl;
 
     }
+};
+int main(){
+    Book b1;
+    b1.setBook("The Vegeterian", "Han Kang", "Hogarth", 340.54, 183);
+    b1.getDetails();
+    return 0;
 }
