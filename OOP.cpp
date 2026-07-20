@@ -15,7 +15,7 @@ public:             //access specifier, which means it controls who can access w
 
 string name, address, gender;       //member variables(also called data members or attributes)
 int age;
-float height, weight;
+float heightft, heightinch, weight;
  
   void sleep(){             //member function (behaviours that object are capable of performing)
     cout<<"This human can sleep"<<endl;
@@ -30,9 +30,24 @@ float height, weight;
         human1.age=20;
         human1.address="Sirjanachowk";
 
+        human human2;
+        human2.name="Subikshya";
+        human2.age=16;
+        human2.address="Zero Km";
+        human2.heightft=5;
+        human2.heightinch=3;
+
+
         cout<<human1.name<<endl;
         cout<<human1.age<<endl;
         cout<<human1.address<<endl;
+       cout<< '\n';
+         cout<<human2.name<<endl;
+        cout<<human2.age<<endl;
+        cout<<human2.address<<endl;
+         cout<<human2.heightft<<"ft";
+        cout<<human2.heightinch<<"inch"<<endl;
+
         human1.eat();
           return 0;
  }
